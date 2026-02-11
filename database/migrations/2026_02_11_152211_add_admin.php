@@ -13,7 +13,7 @@ return new class extends Migration
     {
         \DB::table(
             'users'
-        )->create([
+        )->insert([
             'name' => 'admin',
             'email' => 'admin@admin.com',
             'password' => password_hash('admin', PASSWORD_DEFAULT),
